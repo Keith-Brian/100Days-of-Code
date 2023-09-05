@@ -11,6 +11,13 @@ fun main(){
     car2.setColor("Green")
     println(car2.getColor())
 
+    //instantiating the object classes
+    var broker = Database
+    broker.url = "https://test.mosquitto.org"
+    broker.port = 1883
+
+    broker.connect()
+
     //using the calculator functions
     println("The value is: ${Calculator.multiply(5,10)}")
 
