@@ -1,12 +1,26 @@
-class Car(var name:String,var brand:String, var door:Int) {
+import java.awt.Color
 
-    // creating a constructor
+class Car(name:String, var brand:String, var door:Int) {
+  var name = name
+  private var color: String =""
 
-    fun move(){
-        println("The car is moving: ${this.name}")
+  fun setColor(color:String){
+      this.color = color
+  }
+
+  fun getColor():String{
+      return this.color
+  }
+
+    //Initialize keyword runs once when an object is created
+    init {
+        if (name=="Passo"){
+            var name = name
+        }else{
+            println("Name Mismatch!")
+        }
     }
+    // Creating a secondary constructor
+    constructor(name: String, brand: String):this(name,brand,0)
 
-    fun stop(){
-        println("The car is stopped: ${this.name}")
-    }
 }
