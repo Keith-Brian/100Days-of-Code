@@ -8,4 +8,10 @@ fun main() {
     // creating a new ListView objects
     val countries = ListView(arrayOf("Kenya","Uganda","Tanzania","Sudan","Egypt","Ireland"))
     countries.ListViewItems().displayItem(4)
+
+    // creating a new bank account
+    val user1 = Account()
+    user1.deposit(1000)
+    user1.withdraw(400)
+    user1.getBalance()
 }
