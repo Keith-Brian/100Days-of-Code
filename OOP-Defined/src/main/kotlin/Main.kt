@@ -18,4 +18,8 @@ fun main() {
     val car = Car()
     car.service();
     car.start();
+
+    val bird = Birds(2,"Forest",true)
+    println(bird.habitat)
+    bird.eat("grain")
 }
