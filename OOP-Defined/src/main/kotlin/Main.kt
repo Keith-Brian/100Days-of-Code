@@ -14,4 +14,8 @@ fun main() {
     user1.deposit(1000)
     user1.withdraw(400)
     user1.getBalance()
+
+    val car = Car()
+    car.service();
+    car.start();
 }
